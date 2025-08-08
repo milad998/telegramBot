@@ -8,8 +8,8 @@ app.use(cors()); // ⬅️ مهم جدًا لمنع خطأ CORS
 app.use(express.json());
 
 app.post('/', async (req, res) => {
-  const token = process.env.token;
-  const chat_id = process.env.chat_id;
+  const token = '8391195305:AAF-UCHdFDY2uR1cZI8-DOgEt59z849fq20';
+  const chat_id = 5714216192;
   const { text } = req.body;
 
   if (!text) {
