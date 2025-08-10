@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.post('/', async (req, res) => {
   const token = '8391195305:AAF-UCHdFDY2uR1cZI8-DOgEt59z849fq20';
-  const chat_id = 5714216192;
+  const chat_id = '-4836393174';
   const { text } = req.body;
 
   if (!text) {
