@@ -8,7 +8,7 @@ app.use(cors()); // ⬅️ مهم جدًا لمنع خطأ CORS
 app.use(express.json());
 
 app.post('/', async (req, res) => {
-  const token = '8391195305:AAF-UCHdFDY2uR1cZI8-DOgEt59z849fq20';
+  const token = process.env.TELEGRAM_TOKEN;
   const chat_id = '-4836393174';
   const { text } = req.body;
 
